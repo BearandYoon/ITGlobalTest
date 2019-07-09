@@ -1,0 +1,23 @@
+<div class="users-container">
+  <h1>Users List</h1>
+  <div class="table-container">
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>UserName</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Website</th>
+      </tr>
+      <tr *ngFor="let user of users" (click)="clickUser(user)">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.website}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
